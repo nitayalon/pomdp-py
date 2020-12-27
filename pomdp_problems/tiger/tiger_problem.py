@@ -40,7 +40,7 @@ import random
 import numpy as np
 import sys
 
-class State(pomdp_py.State):
+class State(pomdp_py.State):       
     def __init__(self, name):
         self.name = name
     def __hash__(self):
