@@ -15,8 +15,7 @@ State space:
 """
 
 import pomdp_py
-import math
-
+import math 
 ###### States ######
 class ObjectState(pomdp_py.ObjectState):
     def __init__(self, objid, objclass, pose):

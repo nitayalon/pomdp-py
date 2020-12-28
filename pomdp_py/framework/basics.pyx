@@ -295,6 +295,7 @@ cdef class Action:
         raise NotImplementedError
     def __hash__(self):
         raise NotImplementedError        
+
 cdef class State:
     """
     The State class. State must be `hashable`.

@@ -10,8 +10,8 @@ from pomdp_py.algorithms.value_function import value, qvalue
 from pomdp_py.algorithms.pomcp import POMCP
 from pomdp_py.algorithms.po_rollout import PORollout
 from pomdp_py.algorithms.po_uct import POUCT, QNode, VNode, RootVNode,\
-    RolloutPolicy, RandomRollout, print_preferred_actions, print_tree,\
-    tree_stats, ActionPrior
+  RolloutPolicy, RandomRollout, print_preferred_actions, print_tree,\
+  tree_stats, ActionPrior
 from pomdp_py.algorithms.bsp.blqr import BLQR
 from pomdp_py.algorithms.visual import visual
 from pomdp_py.representations.belief.histogram import update_histogram_belief
