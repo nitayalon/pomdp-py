@@ -1,4 +1,4 @@
-"""Defines the ObservationModel for the the Theory-Of-Mind level-0 worker domain;
+"""Defines the ObservationModel for the Theory-Of-Mind level-0 worker domain;
 
 Observation: :math:`-1 \cup 0`.
     The obsevation is either accept if the opponent agrees to the deal or rejection if there's no deal
@@ -11,8 +11,6 @@ Observation Model
 
 import pomdp_py
 import numpy as np
-import os, sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from pomdp_problems.tom_0_worker.domain.state import *
 from pomdp_problems.tom_0_worker.domain.action import *
 from pomdp_problems.tom_0_worker.domain.observation import *
@@ -43,5 +41,6 @@ def unittest():
 
     o_reject = O.sample(State(np.array([35.2])), Action(np.array([36])))
     assert o_reject.value == 'reject'    
+
 if __name__ == "__main__":
     unittest()

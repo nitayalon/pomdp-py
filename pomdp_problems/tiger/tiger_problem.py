@@ -120,8 +120,10 @@ class ObservationModel(pomdp_py.ObservationModel):
 # Transition Model
 class TransitionModel(pomdp_py.TransitionModel):
     def probability(self, next_state, state, action):
-        """According to problem spec, the world resets once
-        action is open-left/open-right. Otherwise, stays the same"""
+        """
+        According to problem spec, the world resets once
+        action is open-left/open-right. Otherwise, stays the same
+        """
         if action.name.startswith("open"):
             return 0.5
         else:
